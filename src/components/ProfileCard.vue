@@ -39,7 +39,7 @@ const props = defineProps({
 
 <style scoped>
 .card {
-  width: 500px;
+  width: 768px;
   border-radius: 16px;
   background: #f3f5f7;
 }
