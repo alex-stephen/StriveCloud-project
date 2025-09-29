@@ -20,6 +20,7 @@ const props = defineProps({
 <template>
   <div class="card text-center p-3">
     <img
+      v-if="props.profile.avatar_url"
       :src="props.profile.avatar_url"
       :alt="props.profile.name"
       class="rounded-circle border border-success mb-2"

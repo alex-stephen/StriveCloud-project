@@ -38,7 +38,7 @@ const progressPercent = computed(() => (props.profile.current_xp / maxXP.value) 
         </div>
     </div>
     <div class="d-flex flex-column align-items-end">
-        <small class="text-muted mb-1">
+        <small class="text-muted mb-2">
             {{ props.profile.xp_to_next_level }} xp to level up!
         </small>
         <button class="btn btn-success btn-md mb-4">
