@@ -31,6 +31,7 @@ npm install pinia
 ```sh
 npm install @fortawesome/vue-fontawesome@latest-3
 npm install @fortawesome/fontawesome-svg-core
+npm install @fortawesome/free-solid-svg-icons
 ```
 
 ### Compile and Hot-Reload for Development

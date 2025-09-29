@@ -1,5 +1,7 @@
 <script setup>
 import { defineProps } from 'vue';
+import { faTrophy } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 
 const props = defineProps({
@@ -12,7 +14,8 @@ const props = defineProps({
 
 <template>
   <div class="container border rounded-4">
-    <h2 class="mb-3 mt-2 text-center text-success fw-bold">Achievements</h2>
+    <FontAwesomeIcon :icon="faTrophy" size="2x" class="text-success mt-2"/>
+    <h2 class="mb-3 mt text-center text-success fw-bold">Achievements</h2>
     <div class="row row-cols-3 g-4">
       <div class="col text-center p-2" v-for="achievement in achievements" :key="achievement.id">
         <img
