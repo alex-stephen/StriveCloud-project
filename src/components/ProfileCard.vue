@@ -42,6 +42,7 @@ const props = defineProps({
 .card {
   width: 500px;
   border-radius: 16px;
+  background: #f3f5f7;
 }
 
 .achievements-wrapper {

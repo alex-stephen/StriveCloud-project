@@ -33,7 +33,7 @@ watch(progressPercent, () => {
 });
 
 const levelUp = () => {
-  // Animate to 100% first
+  // Animate to 100%
   displayProgressPercent.value = 100;
 
   setTimeout(() => {
@@ -58,14 +58,14 @@ const levelUp = () => {
         </div>
 
         <div class="flex-grow-1">
-            <div class="progress">
+            <div class="progress" style="background-color: #e6e9ef">
                 <div
                     class="progress-bar bg-success rounded-3"
                     role="progressbar"
                     :aria-valuenow="localProfile.current_xp"
                     aria-valuemin="0"
                     :aria-valuemax="maxXP"
-                    :style="{ width: displayProgressPercent + '%' }"
+                    :style="{ width: displayProgressPercent + '%'}" 
                 >
                 </div>
             </div>
